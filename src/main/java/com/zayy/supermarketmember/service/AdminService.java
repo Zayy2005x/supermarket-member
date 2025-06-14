@@ -20,4 +20,12 @@ public interface AdminService {
      * @param adminRegisterDTO
      */
     void register(AdminRegisterDTO adminRegisterDTO);
+
+
+    /**
+     * 设置管理员状态
+     * @param id
+     * @param status
+     */
+    void setStatus(Long id, Byte status);
 }

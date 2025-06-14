@@ -61,6 +61,9 @@ public class AdminServiceImpl implements AdminService {
         Long id = BaseContext.getCurrentId();
         //根据id查询操作人信息
         Admin operator = adminMapper.getByUserId(id);
+        if(operator == null){
+            throw new InsufficientPrivilegesException(MessageConstant.INSUFFICIENT_PRIVILEGES_WRONG);
+        }
         if (!operator.getRole().equals(RoleConstant.SUPER_ADMINISTRATION)) {
             //不是超级管理员用户
             throw new InsufficientPrivilegesException(MessageConstant.INSUFFICIENT_PRIVILEGES_WRONG);
@@ -94,5 +97,32 @@ public class AdminServiceImpl implements AdminService {
 
         //写入数据库
         adminMapper.register(admin);
+    }
+
+    /**
+     * 设置管理员账号状态
+     * @param id
+     * @param status
+     */
+    public void setStatus(Long id, Byte status) {
+        //根据当前用户id查询操作人信息,判断权限是否足够
+        Long operatorId = BaseContext.getCurrentId();
+        Admin operator = adminMapper.getByUserId(operatorId);
+        if(operator == null){
+            throw new InsufficientPrivilegesException(MessageConstant.INSUFFICIENT_PRIVILEGES_WRONG);
+        }
+        if(!operator.getRole().equals(RoleConstant.SUPER_ADMINISTRATION)){
+            throw new InsufficientPrivilegesException(MessageConstant.INSUFFICIENT_PRIVILEGES_WRONG);
+        }
+
+        //设置管理员状态
+        Admin admin = Admin.builder()
+                .id(id)
+                .status(status)
+                .updateId(operatorId)
+                .updateTime(LocalDateTime.now())
+                .build();
+
+        adminMapper.update(admin);
     }
 }

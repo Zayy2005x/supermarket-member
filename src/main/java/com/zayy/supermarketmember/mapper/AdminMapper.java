@@ -19,7 +19,7 @@ public interface AdminMapper {
      * @param id
      * @return
      */
-    @Select("SELECT * FROM supermarket_member.admin WHERE username = #{username}")
+    @Select("SELECT * FROM supermarket_member.admin WHERE id = #{id}")
     Admin getByUserId(Long id);
 
     /**
@@ -27,4 +27,10 @@ public interface AdminMapper {
      * @param admin
      */
     void register(Admin admin);
+
+    /**
+     * 更新管理员信息
+     * @param admin
+     */
+    void update(Admin admin);
 }

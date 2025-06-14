@@ -1,9 +1,7 @@
-package com.zayy.supermarketmember.controller;
+package com.zayy.supermarketmember.controller.admin;
 
 
 import com.zayy.supermarketmember.common.constant.JwtClaimsConstant;
-import com.zayy.supermarketmember.common.constant.RoleConstant;
-import com.zayy.supermarketmember.common.context.BaseContext;
 import com.zayy.supermarketmember.common.properties.JwtProperties;
 import com.zayy.supermarketmember.common.result.Result;
 import com.zayy.supermarketmember.common.utils.JwtUtil;
@@ -28,7 +26,7 @@ import java.util.Map;
 @Api(tags = "管理员相关接口" )
 @RestController
 @RequestMapping("/admin")
-public class AdminController {
+public class    AdminController {
 
     @Autowired
     private AdminService adminService;
@@ -61,11 +59,31 @@ public class AdminController {
         return Result.success(adminVO);
     }
 
+    /**
+     * 新增管理员(仅限超级管理员可用)
+     * @param adminRegisterDTO
+     * @return
+     */
     @PostMapping("register")
-    @ApiOperation("新增管理员接口(仅限超级管理员可用)")
+    @ApiOperation("新增管理员接口")
     public Result<String> register(@RequestBody AdminRegisterDTO adminRegisterDTO){
         log.info("新增管理员:{}",adminRegisterDTO);
         adminService.register(adminRegisterDTO);
+        return Result.success();
+    }
+
+
+    /**
+     * 设置管理员状态
+     * @param status
+     * @param id
+     * @return
+     */
+    @PutMapping("status/{status}")
+    @ApiOperation("管理员状态设置接口")
+    public Result<String> setStatus(@PathVariable Byte status,Long id){
+        log.info("设置管理员:{},状态:{}",status,id);
+        adminService.setStatus(id,status);
         return Result.success();
     }
 
