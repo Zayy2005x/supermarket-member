@@ -13,4 +13,18 @@ public interface AdminMapper {
      */
     @Select("SELECT * FROM supermarket_member.admin WHERE username = #{username}")
     Admin getByUsername(String username);
+
+    /**
+     * 根据用户ID查询用户
+     * @param id
+     * @return
+     */
+    @Select("SELECT * FROM supermarket_member.admin WHERE username = #{username}")
+    Admin getByUserId(Long id);
+
+    /**
+     * 新增用户
+     * @param admin
+     */
+    void register(Admin admin);
 }

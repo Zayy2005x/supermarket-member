@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zayy.supermarketmember.mapper.AdminMapper">
+
+    <insert id="register">
+        INSERT INTO supermarket_member.admin(username, password, name, role, status, last_login, create_time, update_time, create_id, update_id)
+        VALUES(#{username},#{password},#{name},#{role},#{status},#{lastLogin},#{createTime},#{updateTime},#{createId},#{updateId})
+    </insert>
+</mapper>

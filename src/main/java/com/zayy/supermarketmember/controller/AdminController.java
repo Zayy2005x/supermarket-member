@@ -2,10 +2,14 @@ package com.zayy.supermarketmember.controller;
 
 
 import com.zayy.supermarketmember.common.constant.JwtClaimsConstant;
+import com.zayy.supermarketmember.common.constant.RoleConstant;
+import com.zayy.supermarketmember.common.context.BaseContext;
 import com.zayy.supermarketmember.common.properties.JwtProperties;
 import com.zayy.supermarketmember.common.result.Result;
 import com.zayy.supermarketmember.common.utils.JwtUtil;
+import com.zayy.supermarketmember.mapper.AdminMapper;
 import com.zayy.supermarketmember.pojo.dto.AdminLoginDTO;
+import com.zayy.supermarketmember.pojo.dto.AdminRegisterDTO;
 import com.zayy.supermarketmember.pojo.entity.Admin;
 import com.zayy.supermarketmember.pojo.vo.AdminVO;
 import com.zayy.supermarketmember.service.AdminService;
@@ -14,10 +18,7 @@ import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,6 +34,8 @@ public class AdminController {
     private AdminService adminService;
     @Autowired
     private JwtProperties jwtProperties;
+    @Autowired
+    private AdminMapper adminMapper;
 
     /**
      * 管理员登录
@@ -57,4 +60,13 @@ public class AdminController {
                 .build();
         return Result.success(adminVO);
     }
+
+    @PostMapping("register")
+    @ApiOperation("新增管理员接口(仅限超级管理员可用)")
+    public Result<String> register(@RequestBody AdminRegisterDTO adminRegisterDTO){
+        log.info("新增管理员:{}",adminRegisterDTO);
+        adminService.register(adminRegisterDTO);
+        return Result.success();
+    }
+
 }
