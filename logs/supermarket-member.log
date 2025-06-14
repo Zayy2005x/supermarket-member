@@ -1,0 +1,838 @@
+2025-06-14T16:48:37.977+08:00  INFO 17132 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 17132 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T16:48:37.981+08:00  INFO 17132 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T16:48:39.178+08:00  INFO 17132 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T16:48:39.194+08:00  INFO 17132 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T16:48:39.195+08:00  INFO 17132 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T16:48:39.264+08:00  INFO 17132 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T16:48:39.266+08:00  INFO 17132 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1224 ms
+2025-06-14T16:48:39.845+08:00  INFO 17132 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-14T16:48:39.856+08:00  INFO 17132 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Started SupermarketMemberApplication in 2.5 seconds (process running for 3.203)
+2025-06-14T20:14:13.755+08:00  INFO 8088 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 8088 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T20:14:13.758+08:00  INFO 8088 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T20:14:15.262+08:00  INFO 8088 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T20:14:15.287+08:00  INFO 8088 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:14:15.288+08:00  INFO 8088 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T20:14:15.397+08:00  INFO 8088 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:14:15.398+08:00  INFO 8088 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1582 ms
+2025-06-14T20:14:15.500+08:00  WARN 8088 --- [supermarket-member] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService': No qualifying bean of type 'com.zayy.supermarketmember.service.AdminService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-06-14T20:14:15.503+08:00  INFO 8088 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-06-14T20:14:15.529+08:00  INFO 8088 --- [supermarket-member] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-14T20:14:15.562+08:00 ERROR 8088 --- [supermarket-member] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field adminService in com.zayy.supermarketmember.controller.AdminController required a bean of type 'com.zayy.supermarketmember.service.AdminService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.zayy.supermarketmember.service.AdminService' in your configuration.
+
+2025-06-14T20:14:54.821+08:00  INFO 47800 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 47800 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T20:14:54.825+08:00  INFO 47800 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T20:14:56.248+08:00  INFO 47800 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T20:14:56.271+08:00  INFO 47800 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:14:56.272+08:00  INFO 47800 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T20:14:56.379+08:00  INFO 47800 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:14:56.379+08:00  INFO 47800 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1499 ms
+2025-06-14T20:14:56.728+08:00  INFO 47800 --- [supermarket-member] [main] c.z.s.config.WebMvcConfiguration         : 开始注册自定义拦截器...
+2025-06-14T20:14:57.201+08:00  INFO 47800 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-14T20:14:57.212+08:00  INFO 47800 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Started SupermarketMemberApplication in 3.06 seconds (process running for 3.871)
+2025-06-14T20:17:27.414+08:00  INFO 47800 --- [supermarket-member] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-14T20:17:27.414+08:00  INFO 47800 --- [supermarket-member] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-14T20:17:27.415+08:00  INFO 47800 --- [supermarket-member] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-14T20:17:27.442+08:00  INFO 47800 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.i.JwtTokenAdminInterceptor         : jwt校验:null
+2025-06-14T20:17:52.074+08:00  INFO 48960 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 48960 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T20:17:52.078+08:00  INFO 48960 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T20:17:53.497+08:00  INFO 48960 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T20:17:53.517+08:00  INFO 48960 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:17:53.517+08:00  INFO 48960 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T20:17:53.619+08:00  INFO 48960 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:17:53.619+08:00  INFO 48960 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1483 ms
+2025-06-14T20:17:53.909+08:00  INFO 48960 --- [supermarket-member] [main] c.z.s.config.WebMvcConfiguration         : 开始注册自定义拦截器...
+2025-06-14T20:17:54.304+08:00  INFO 48960 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-14T20:17:54.314+08:00  INFO 48960 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Started SupermarketMemberApplication in 2.904 seconds (process running for 3.693)
+2025-06-14T20:17:55.090+08:00  INFO 48960 --- [supermarket-member] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-14T20:17:55.090+08:00  INFO 48960 --- [supermarket-member] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-14T20:17:55.090+08:00  INFO 48960 --- [supermarket-member] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-14T20:17:55.226+08:00  INFO 48960 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:17:55.251+08:00  INFO 48960 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-14T20:17:55.689+08:00  INFO 48960 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7dc9e30f
+2025-06-14T20:17:55.692+08:00  INFO 48960 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-14T20:17:55.701+08:00 DEBUG 48960 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:17:55.733+08:00 DEBUG 48960 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:17:55.778+08:00 DEBUG 48960 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:17:55.792+08:00 ERROR 48960 --- [supermarket-member] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.zayy.supermarketmember.common.exception.AccountLockedException: 账户被锁定] with root cause
+
+com.zayy.supermarketmember.common.exception.AccountLockedException: 账户被锁定
+	at com.zayy.supermarketmember.service.Impl.AdminServiceImpl.login(AdminServiceImpl.java:44) ~[classes/:na]
+	at com.zayy.supermarketmember.controller.AdminController.login(AdminController.java:45) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-06-14T20:19:09.097+08:00  INFO 48960 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-14T20:19:09.108+08:00  INFO 48960 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-14T20:19:14.760+08:00  INFO 51104 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 51104 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T20:19:14.764+08:00  INFO 51104 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T20:19:16.237+08:00  INFO 51104 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T20:19:16.258+08:00  INFO 51104 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:19:16.259+08:00  INFO 51104 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T20:19:16.372+08:00  INFO 51104 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:19:16.373+08:00  INFO 51104 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1552 ms
+2025-06-14T20:19:16.667+08:00  INFO 51104 --- [supermarket-member] [main] c.z.s.config.WebMvcConfiguration         : 开始注册自定义拦截器...
+2025-06-14T20:19:17.145+08:00  INFO 51104 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-14T20:19:17.160+08:00  INFO 51104 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Started SupermarketMemberApplication in 3.052 seconds (process running for 3.906)
+2025-06-14T20:19:25.681+08:00  INFO 51104 --- [supermarket-member] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-14T20:19:25.681+08:00  INFO 51104 --- [supermarket-member] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-14T20:19:25.682+08:00  INFO 51104 --- [supermarket-member] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-14T20:19:25.830+08:00  INFO 51104 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:19:25.858+08:00  INFO 51104 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-14T20:19:26.337+08:00  INFO 51104 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23c30711
+2025-06-14T20:19:26.340+08:00  INFO 51104 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-14T20:19:26.350+08:00 DEBUG 51104 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:19:26.386+08:00 DEBUG 51104 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:19:26.428+08:00 DEBUG 51104 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:19:26.441+08:00 ERROR 51104 --- [supermarket-member] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.zayy.supermarketmember.common.exception.AccountLockedException: 账户被锁定] with root cause
+
+com.zayy.supermarketmember.common.exception.AccountLockedException: 账户被锁定
+	at com.zayy.supermarketmember.service.Impl.AdminServiceImpl.login(AdminServiceImpl.java:44) ~[classes/:na]
+	at com.zayy.supermarketmember.controller.AdminController.login(AdminController.java:45) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-06-14T20:20:05.424+08:00  INFO 51104 --- [supermarket-member] [http-nio-8080-exec-4] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:20:05.425+08:00 DEBUG 51104 --- [supermarket-member] [http-nio-8080-exec-4] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:20:05.425+08:00 DEBUG 51104 --- [supermarket-member] [http-nio-8080-exec-4] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:20:05.427+08:00 DEBUG 51104 --- [supermarket-member] [http-nio-8080-exec-4] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:20:05.427+08:00 ERROR 51104 --- [supermarket-member] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.zayy.supermarketmember.common.exception.AccountLockedException: 账户被锁定] with root cause
+
+com.zayy.supermarketmember.common.exception.AccountLockedException: 账户被锁定
+	at com.zayy.supermarketmember.service.Impl.AdminServiceImpl.login(AdminServiceImpl.java:44) ~[classes/:na]
+	at com.zayy.supermarketmember.controller.AdminController.login(AdminController.java:45) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-06-14T20:20:36.638+08:00  INFO 51104 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-14T20:20:36.650+08:00  INFO 51104 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-14T20:20:42.239+08:00  INFO 55108 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 55108 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T20:20:42.243+08:00  INFO 55108 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T20:20:43.712+08:00  INFO 55108 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T20:20:43.732+08:00  INFO 55108 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:20:43.732+08:00  INFO 55108 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T20:20:43.839+08:00  INFO 55108 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:20:43.839+08:00  INFO 55108 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1531 ms
+2025-06-14T20:20:44.136+08:00  INFO 55108 --- [supermarket-member] [main] c.z.s.config.WebMvcConfiguration         : 开始注册自定义拦截器...
+2025-06-14T20:20:44.552+08:00  INFO 55108 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-14T20:20:44.563+08:00  INFO 55108 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Started SupermarketMemberApplication in 3.047 seconds (process running for 3.869)
+2025-06-14T20:20:51.226+08:00  INFO 55108 --- [supermarket-member] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-14T20:20:51.226+08:00  INFO 55108 --- [supermarket-member] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-14T20:20:51.227+08:00  INFO 55108 --- [supermarket-member] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-14T20:20:51.375+08:00  INFO 55108 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:20:51.399+08:00  INFO 55108 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-14T20:20:51.772+08:00  INFO 55108 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74e4cdfb
+2025-06-14T20:20:51.774+08:00  INFO 55108 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-14T20:20:51.785+08:00 DEBUG 55108 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:20:51.818+08:00 DEBUG 55108 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:20:51.857+08:00 DEBUG 55108 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:20:51.868+08:00 ERROR 55108 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.handle.GlobalExceptionHandler      : 异常信息：账户被锁定
+2025-06-14T20:21:31.351+08:00  INFO 55108 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-14T20:21:31.360+08:00  INFO 55108 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-14T20:21:36.634+08:00  INFO 45312 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 45312 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T20:21:36.639+08:00  INFO 45312 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T20:21:38.044+08:00  INFO 45312 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T20:21:38.064+08:00  INFO 45312 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:21:38.064+08:00  INFO 45312 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T20:21:38.167+08:00  INFO 45312 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:21:38.169+08:00  INFO 45312 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1472 ms
+2025-06-14T20:21:38.493+08:00  INFO 45312 --- [supermarket-member] [main] c.z.s.config.WebMvcConfiguration         : 开始注册自定义拦截器...
+2025-06-14T20:21:38.890+08:00  INFO 45312 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-14T20:21:38.901+08:00  INFO 45312 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Started SupermarketMemberApplication in 2.906 seconds (process running for 3.711)
+2025-06-14T20:21:40.910+08:00  INFO 45312 --- [supermarket-member] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-14T20:21:40.910+08:00  INFO 45312 --- [supermarket-member] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-14T20:21:40.911+08:00  INFO 45312 --- [supermarket-member] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-14T20:21:41.045+08:00  INFO 45312 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:21:41.070+08:00  INFO 45312 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-14T20:21:41.454+08:00  INFO 45312 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21d9094e
+2025-06-14T20:21:41.457+08:00  INFO 45312 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-14T20:21:41.467+08:00 DEBUG 45312 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:21:41.503+08:00 DEBUG 45312 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:21:41.544+08:00 DEBUG 45312 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:21:41.557+08:00 ERROR 45312 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.handle.GlobalExceptionHandler      : 异常信息：账户被锁定
+2025-06-14T20:21:57.649+08:00  INFO 45312 --- [supermarket-member] [http-nio-8080-exec-3] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:21:57.651+08:00 DEBUG 45312 --- [supermarket-member] [http-nio-8080-exec-3] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:21:57.651+08:00 DEBUG 45312 --- [supermarket-member] [http-nio-8080-exec-3] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:21:57.654+08:00 DEBUG 45312 --- [supermarket-member] [http-nio-8080-exec-3] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:21:57.654+08:00  INFO 45312 --- [supermarket-member] [http-nio-8080-exec-3] c.z.s.controller.AdminController         : Jwt相关配置:JwtProperties(adminSecretKey=supermarket-member, adminTtl=7200000, adminTokenName=token)
+2025-06-14T20:26:22.315+08:00  INFO 45312 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-14T20:26:22.326+08:00  INFO 45312 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-14T20:26:28.112+08:00  INFO 30980 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 30980 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T20:26:28.116+08:00  INFO 30980 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T20:26:29.570+08:00  INFO 30980 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T20:26:29.591+08:00  INFO 30980 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:26:29.591+08:00  INFO 30980 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T20:26:29.684+08:00  INFO 30980 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:26:29.684+08:00  INFO 30980 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1506 ms
+2025-06-14T20:26:29.967+08:00  INFO 30980 --- [supermarket-member] [main] c.z.s.config.WebMvcConfiguration         : 开始注册自定义拦截器...
+2025-06-14T20:26:30.427+08:00  INFO 30980 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-14T20:26:30.439+08:00  INFO 30980 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Started SupermarketMemberApplication in 2.982 seconds (process running for 3.788)
+2025-06-14T20:26:31.727+08:00  INFO 30980 --- [supermarket-member] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-14T20:26:31.727+08:00  INFO 30980 --- [supermarket-member] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-14T20:26:31.728+08:00  INFO 30980 --- [supermarket-member] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-14T20:26:31.870+08:00  INFO 30980 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:26:31.895+08:00  INFO 30980 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-14T20:26:32.278+08:00  INFO 30980 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@622a3415
+2025-06-14T20:26:32.281+08:00  INFO 30980 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-14T20:26:32.291+08:00 DEBUG 30980 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:26:32.326+08:00 DEBUG 30980 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:26:32.370+08:00 DEBUG 30980 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:26:32.377+08:00  INFO 30980 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.controller.AdminController         : Jwt相关配置:JwtProperties(adminSecretKey=supermarket-member, adminTtl=7200000, adminTokenName=token)
+2025-06-14T20:26:32.424+08:00 ERROR 30980 --- [supermarket-member] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter] with root cause
+
+java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at io.jsonwebtoken.impl.Base64Codec.encode(Base64Codec.java:21) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.Base64UrlCodec.encode(Base64UrlCodec.java:22) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.base64UrlEncode(DefaultJwtBuilder.java:349) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.compact(DefaultJwtBuilder.java:295) ~[jjwt-0.9.1.jar:0.9.1]
+	at com.zayy.supermarketmember.common.utils.JwtUtil.createJWT(JwtUtil.java:30) ~[classes/:na]
+	at com.zayy.supermarketmember.controller.AdminController.login(AdminController.java:51) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-06-14T20:27:40.885+08:00  INFO 30980 --- [supermarket-member] [http-nio-8080-exec-4] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:27:40.887+08:00 DEBUG 30980 --- [supermarket-member] [http-nio-8080-exec-4] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:27:40.888+08:00 DEBUG 30980 --- [supermarket-member] [http-nio-8080-exec-4] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:27:40.890+08:00 DEBUG 30980 --- [supermarket-member] [http-nio-8080-exec-4] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:27:40.890+08:00  INFO 30980 --- [supermarket-member] [http-nio-8080-exec-4] c.z.s.controller.AdminController         : Jwt相关配置:JwtProperties(adminSecretKey=supermarket-member, adminTtl=7200000, adminTokenName=token)
+2025-06-14T20:27:40.891+08:00 ERROR 30980 --- [supermarket-member] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter] with root cause
+
+java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+	at io.jsonwebtoken.impl.Base64Codec.encode(Base64Codec.java:21) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.Base64UrlCodec.encode(Base64UrlCodec.java:22) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.base64UrlEncode(DefaultJwtBuilder.java:349) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.compact(DefaultJwtBuilder.java:295) ~[jjwt-0.9.1.jar:0.9.1]
+	at com.zayy.supermarketmember.common.utils.JwtUtil.createJWT(JwtUtil.java:30) ~[classes/:na]
+	at com.zayy.supermarketmember.controller.AdminController.login(AdminController.java:51) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-06-14T20:29:20.727+08:00  INFO 30980 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-14T20:29:20.737+08:00  INFO 30980 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-14T20:38:13.943+08:00  INFO 13624 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 13624 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T20:38:13.946+08:00  INFO 13624 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T20:38:15.478+08:00  INFO 13624 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T20:38:15.496+08:00  INFO 13624 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:38:15.496+08:00  INFO 13624 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T20:38:15.595+08:00  INFO 13624 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:38:15.595+08:00  INFO 13624 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1596 ms
+2025-06-14T20:38:15.947+08:00  INFO 13624 --- [supermarket-member] [main] c.z.s.config.WebMvcConfiguration         : 开始注册自定义拦截器...
+2025-06-14T20:38:16.448+08:00  INFO 13624 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-14T20:38:16.462+08:00  INFO 13624 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Started SupermarketMemberApplication in 3.25 seconds (process running for 4.113)
+2025-06-14T20:38:34.465+08:00  INFO 13624 --- [supermarket-member] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-14T20:38:34.465+08:00  INFO 13624 --- [supermarket-member] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-14T20:38:34.466+08:00  INFO 13624 --- [supermarket-member] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-14T20:38:34.632+08:00  INFO 13624 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:38:34.662+08:00  INFO 13624 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-14T20:38:35.191+08:00  INFO 13624 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@566a10cf
+2025-06-14T20:38:35.195+08:00  INFO 13624 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-14T20:38:35.208+08:00 DEBUG 13624 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:38:35.248+08:00 DEBUG 13624 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:38:35.294+08:00 DEBUG 13624 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:38:35.309+08:00 ERROR 13624 --- [supermarket-member] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoClassDefFoundError: io/jsonwebtoken/SignatureAlgorithm] with root cause
+
+java.lang.ClassNotFoundException: io.jsonwebtoken.SignatureAlgorithm
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at com.zayy.supermarketmember.common.utils.JwtUtil.createJWT(JwtUtil.java:20) ~[classes/:na]
+	at com.zayy.supermarketmember.controller.AdminController.login(AdminController.java:50) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-06-14T20:39:00.178+08:00  INFO 13624 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-14T20:39:00.190+08:00  INFO 13624 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-14T20:39:50.185+08:00  INFO 52940 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 52940 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T20:39:50.188+08:00  INFO 52940 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T20:39:51.731+08:00  INFO 52940 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T20:39:51.753+08:00  INFO 52940 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:39:51.754+08:00  INFO 52940 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T20:39:51.863+08:00  INFO 52940 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:39:51.864+08:00  INFO 52940 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1622 ms
+2025-06-14T20:39:52.207+08:00  INFO 52940 --- [supermarket-member] [main] c.z.s.config.WebMvcConfiguration         : 开始注册自定义拦截器...
+2025-06-14T20:39:52.697+08:00  INFO 52940 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-14T20:39:52.708+08:00  INFO 52940 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Started SupermarketMemberApplication in 3.262 seconds (process running for 4.092)
+2025-06-14T20:39:55.070+08:00  INFO 52940 --- [supermarket-member] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-14T20:39:55.071+08:00  INFO 52940 --- [supermarket-member] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-14T20:39:55.072+08:00  INFO 52940 --- [supermarket-member] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-14T20:39:55.213+08:00  INFO 52940 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:39:55.240+08:00  INFO 52940 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-14T20:39:55.680+08:00  INFO 52940 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d775192
+2025-06-14T20:39:55.683+08:00  INFO 52940 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-14T20:39:55.695+08:00 DEBUG 52940 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:39:55.729+08:00 DEBUG 52940 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:39:55.772+08:00 DEBUG 52940 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:39:55.820+08:00 ERROR 52940 --- [supermarket-member] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter] with root cause
+
+java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at io.jsonwebtoken.impl.Base64Codec.encode(Base64Codec.java:21) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.Base64UrlCodec.encode(Base64UrlCodec.java:22) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.base64UrlEncode(DefaultJwtBuilder.java:349) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.compact(DefaultJwtBuilder.java:295) ~[jjwt-0.9.1.jar:0.9.1]
+	at com.zayy.supermarketmember.common.utils.JwtUtil.createJWT(JwtUtil.java:30) ~[classes/:na]
+	at com.zayy.supermarketmember.controller.AdminController.login(AdminController.java:50) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-06-14T20:40:06.254+08:00  INFO 52940 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-14T20:40:06.263+08:00  INFO 52940 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-14T20:40:09.346+08:00  INFO 45192 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 45192 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T20:40:09.350+08:00  INFO 45192 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T20:40:10.678+08:00  INFO 45192 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T20:40:10.695+08:00  INFO 45192 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:40:10.695+08:00  INFO 45192 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T20:40:10.783+08:00  INFO 45192 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:40:10.783+08:00  INFO 45192 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1381 ms
+2025-06-14T20:40:11.071+08:00  INFO 45192 --- [supermarket-member] [main] c.z.s.config.WebMvcConfiguration         : 开始注册自定义拦截器...
+2025-06-14T20:40:11.508+08:00  INFO 45192 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-14T20:40:11.522+08:00  INFO 45192 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Started SupermarketMemberApplication in 2.817 seconds (process running for 3.623)
+2025-06-14T20:40:14.331+08:00  INFO 45192 --- [supermarket-member] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-14T20:40:14.333+08:00  INFO 45192 --- [supermarket-member] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-14T20:40:14.333+08:00  INFO 45192 --- [supermarket-member] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-14T20:40:14.466+08:00  INFO 45192 --- [supermarket-member] [http-nio-8080-exec-3] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:40:14.491+08:00  INFO 45192 --- [supermarket-member] [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-14T20:40:14.856+08:00  INFO 45192 --- [supermarket-member] [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ac7d421
+2025-06-14T20:40:14.859+08:00  INFO 45192 --- [supermarket-member] [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-14T20:40:14.869+08:00 DEBUG 45192 --- [supermarket-member] [http-nio-8080-exec-3] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:40:14.904+08:00 DEBUG 45192 --- [supermarket-member] [http-nio-8080-exec-3] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:40:14.945+08:00 DEBUG 45192 --- [supermarket-member] [http-nio-8080-exec-3] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:40:14.993+08:00 ERROR 45192 --- [supermarket-member] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter] with root cause
+
+java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at io.jsonwebtoken.impl.Base64Codec.encode(Base64Codec.java:21) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.Base64UrlCodec.encode(Base64UrlCodec.java:22) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.base64UrlEncode(DefaultJwtBuilder.java:349) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.compact(DefaultJwtBuilder.java:295) ~[jjwt-0.9.1.jar:0.9.1]
+	at com.zayy.supermarketmember.common.utils.JwtUtil.createJWT(JwtUtil.java:30) ~[classes/:na]
+	at com.zayy.supermarketmember.controller.AdminController.login(AdminController.java:50) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-06-14T20:41:39.092+08:00  INFO 45192 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-14T20:41:39.107+08:00  INFO 45192 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-14T20:45:39.847+08:00  INFO 53552 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 53552 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T20:45:39.852+08:00  INFO 53552 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T20:45:41.487+08:00  INFO 53552 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T20:45:41.510+08:00  INFO 53552 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:45:41.511+08:00  INFO 53552 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T20:45:41.621+08:00  INFO 53552 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:45:41.622+08:00  INFO 53552 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1711 ms
+2025-06-14T20:45:41.967+08:00  INFO 53552 --- [supermarket-member] [main] c.z.s.config.WebMvcConfiguration         : 开始注册自定义拦截器...
+2025-06-14T20:45:42.454+08:00  INFO 53552 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-14T20:45:42.465+08:00  INFO 53552 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Started SupermarketMemberApplication in 3.397 seconds (process running for 4.435)
+2025-06-14T20:45:44.291+08:00  INFO 53552 --- [supermarket-member] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-14T20:45:44.292+08:00  INFO 53552 --- [supermarket-member] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-14T20:45:44.294+08:00  INFO 53552 --- [supermarket-member] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-14T20:45:44.431+08:00  INFO 53552 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:45:44.457+08:00  INFO 53552 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-14T20:45:44.957+08:00  INFO 53552 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6614e0ec
+2025-06-14T20:45:44.960+08:00  INFO 53552 --- [supermarket-member] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-14T20:45:44.971+08:00 DEBUG 53552 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:45:45.007+08:00 DEBUG 53552 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:45:45.056+08:00 DEBUG 53552 --- [supermarket-member] [http-nio-8080-exec-2] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:45:45.103+08:00 ERROR 53552 --- [supermarket-member] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter] with root cause
+
+java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at io.jsonwebtoken.impl.Base64Codec.encode(Base64Codec.java:21) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.Base64UrlCodec.encode(Base64UrlCodec.java:22) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.base64UrlEncode(DefaultJwtBuilder.java:349) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.compact(DefaultJwtBuilder.java:295) ~[jjwt-0.9.1.jar:0.9.1]
+	at com.zayy.supermarketmember.common.utils.JwtUtil.createJWT(JwtUtil.java:30) ~[classes/:na]
+	at com.zayy.supermarketmember.controller.AdminController.login(AdminController.java:50) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-06-14T20:46:51.469+08:00  INFO 53552 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-14T20:46:51.481+08:00  INFO 53552 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-14T20:46:59.914+08:00  INFO 21000 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 21000 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T20:46:59.918+08:00  INFO 21000 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T20:47:01.356+08:00  INFO 21000 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T20:47:01.380+08:00  INFO 21000 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:47:01.380+08:00  INFO 21000 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T20:47:01.491+08:00  INFO 21000 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:47:01.492+08:00  INFO 21000 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1522 ms
+2025-06-14T20:47:01.756+08:00  INFO 21000 --- [supermarket-member] [main] c.z.s.config.WebMvcConfiguration         : 开始注册自定义拦截器...
+2025-06-14T20:47:02.155+08:00  INFO 21000 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-14T20:47:02.165+08:00  INFO 21000 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Started SupermarketMemberApplication in 2.909 seconds (process running for 3.456)
+2025-06-14T20:47:13.488+08:00  INFO 21000 --- [supermarket-member] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-14T20:47:13.489+08:00  INFO 21000 --- [supermarket-member] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-14T20:47:13.490+08:00  INFO 21000 --- [supermarket-member] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-14T20:47:13.645+08:00  INFO 21000 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:47:13.676+08:00  INFO 21000 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-14T20:47:14.097+08:00  INFO 21000 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16437029
+2025-06-14T20:47:14.101+08:00  INFO 21000 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-14T20:47:14.112+08:00 DEBUG 21000 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:47:14.154+08:00 DEBUG 21000 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:47:14.201+08:00 DEBUG 21000 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:47:14.259+08:00 ERROR 21000 --- [supermarket-member] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter] with root cause
+
+java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at io.jsonwebtoken.impl.Base64Codec.encode(Base64Codec.java:21) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.Base64UrlCodec.encode(Base64UrlCodec.java:22) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.base64UrlEncode(DefaultJwtBuilder.java:349) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.compact(DefaultJwtBuilder.java:295) ~[jjwt-0.9.1.jar:0.9.1]
+	at com.zayy.supermarketmember.common.utils.JwtUtil.createJWT(JwtUtil.java:30) ~[classes/:na]
+	at com.zayy.supermarketmember.controller.AdminController.login(AdminController.java:50) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-06-14T20:48:48.615+08:00  INFO 21000 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-14T20:48:48.626+08:00  INFO 21000 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-14T20:48:57.285+08:00  INFO 47952 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Starting SupermarketMemberApplication using Java 17.0.12 with PID 47952 (E:\Code\JavaWeb\supermarket-member\target\classes started by 27813 in E:\Code\JavaWeb\supermarket-member)
+2025-06-14T20:48:57.288+08:00  INFO 47952 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : The following 1 profile is active: "dev"
+2025-06-14T20:48:58.705+08:00  INFO 47952 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-14T20:48:58.724+08:00  INFO 47952 --- [supermarket-member] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-14T20:48:58.725+08:00  INFO 47952 --- [supermarket-member] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-14T20:48:58.825+08:00  INFO 47952 --- [supermarket-member] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-14T20:48:58.826+08:00  INFO 47952 --- [supermarket-member] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1480 ms
+2025-06-14T20:48:59.122+08:00  INFO 47952 --- [supermarket-member] [main] c.z.s.config.WebMvcConfiguration         : 开始注册自定义拦截器...
+2025-06-14T20:48:59.541+08:00  INFO 47952 --- [supermarket-member] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-14T20:48:59.551+08:00  INFO 47952 --- [supermarket-member] [main] c.z.s.SupermarketMemberApplication       : Started SupermarketMemberApplication in 2.929 seconds (process running for 3.753)
+2025-06-14T20:49:02.400+08:00  INFO 47952 --- [supermarket-member] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-14T20:49:02.400+08:00  INFO 47952 --- [supermarket-member] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-14T20:49:02.401+08:00  INFO 47952 --- [supermarket-member] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-14T20:49:02.541+08:00  INFO 47952 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:49:02.567+08:00  INFO 47952 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-14T20:49:02.943+08:00  INFO 47952 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@566a10cf
+2025-06-14T20:49:02.946+08:00  INFO 47952 --- [supermarket-member] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-14T20:49:02.958+08:00 DEBUG 47952 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:49:02.993+08:00 DEBUG 47952 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:49:03.040+08:00 DEBUG 47952 --- [supermarket-member] [http-nio-8080-exec-1] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T20:52:23.094+08:00  INFO 47952 --- [supermarket-member] [http-nio-8080-exec-7] c.z.s.controller.AdminController         : 管理员登录:AdminLoginDTO(username=zhangaoyu, password=123456)
+2025-06-14T20:52:23.095+08:00 DEBUG 47952 --- [supermarket-member] [http-nio-8080-exec-7] c.z.s.mapper.AdminMapper.getByUsername   : ==>  Preparing: SELECT * FROM supermarket_member.admin WHERE username = ?
+2025-06-14T20:52:23.096+08:00 DEBUG 47952 --- [supermarket-member] [http-nio-8080-exec-7] c.z.s.mapper.AdminMapper.getByUsername   : ==> Parameters: zhangaoyu(String)
+2025-06-14T20:52:23.098+08:00 DEBUG 47952 --- [supermarket-member] [http-nio-8080-exec-7] c.z.s.mapper.AdminMapper.getByUsername   : <==      Total: 1
+2025-06-14T21:11:52.073+08:00  INFO 47952 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-14T21:11:52.118+08:00  INFO 47952 --- [supermarket-member] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

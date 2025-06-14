@@ -1,0 +1,37 @@
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: supermarket-member
+  datasource:
+    url: ${supermarket-member.url}
+    username: ${supermarket-member.username}
+    password: ${supermarket-member.password}
+    driver-class-name: ${supermarket-member.driver-class-name}
+
+logging:
+  level:
+    com:
+      zayy:
+        supermarketmember:
+          controller: info
+          mapper: debug
+          service: info
+  file:
+    name: logs/supermarket-member.log
+
+mybatis:
+  configuration:
+    # 开启驼峰命名自动转换
+    map-underscore-to-camel-case: true
+
+supermarket:
+  member:
+    jwt:
+      # 设置jwt签名加密时使用的秘钥
+      admin-secret-key: supermarket-member
+      # 设置jwt过期时间
+      admin-ttl: 7200000
+      # 设置前端传递过来的令牌名称
+      admin-token-name: token
