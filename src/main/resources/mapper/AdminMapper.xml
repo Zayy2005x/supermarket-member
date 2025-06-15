@@ -23,4 +23,13 @@
         </set>
         WHERE id =#{id}
     </update>
+    <select id="page" resultType="com.zayy.supermarketmember.pojo.entity.Admin">
+        SELECT * FROM supermarket_member.admin
+        <where>
+            <if test="name != null and name !=''">
+                name like concat('%',#{name},'%')
+            </if>
+        </where>
+        ORDER BY update_time DESC
+    </select>
 </mapper>

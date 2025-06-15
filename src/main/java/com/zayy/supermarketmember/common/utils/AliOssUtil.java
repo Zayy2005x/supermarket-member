@@ -34,6 +34,7 @@ public class AliOssUtil {
 
         // 创建OSSClient实例。
         OSS ossClient = new OSSClientBuilder().build(endpoint, accessKeyId, accessKeySecret);
+        log.info("创建OSSClient:{}",ossClient);
 
         try {
             // 创建PutObject请求。

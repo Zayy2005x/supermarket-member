@@ -1,12 +1,16 @@
 package com.zayy.supermarketmember.service.Impl;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.zayy.supermarketmember.common.constant.MessageConstant;
 import com.zayy.supermarketmember.common.constant.RoleConstant;
 import com.zayy.supermarketmember.common.constant.StatusConstant;
 import com.zayy.supermarketmember.common.context.BaseContext;
 import com.zayy.supermarketmember.common.exception.*;
+import com.zayy.supermarketmember.common.result.PageResult;
 import com.zayy.supermarketmember.mapper.AdminMapper;
 import com.zayy.supermarketmember.pojo.dto.AdminLoginDTO;
+import com.zayy.supermarketmember.pojo.dto.AdminPageQueryDTO;
 import com.zayy.supermarketmember.pojo.dto.AdminRegisterDTO;
 import com.zayy.supermarketmember.pojo.entity.Admin;
 import com.zayy.supermarketmember.service.AdminService;
@@ -124,5 +128,33 @@ public class AdminServiceImpl implements AdminService {
                 .build();
 
         adminMapper.update(admin);
+    }
+
+    /**
+     * 分页查询
+     * @param adminPageQueryDTO
+     * @return
+     */
+    public PageResult page(AdminPageQueryDTO adminPageQueryDTO) {
+        PageHelper.startPage(adminPageQueryDTO.getPage(), adminPageQueryDTO.getPageSize());
+        Page<Admin> page = adminMapper.page(adminPageQueryDTO);
+        return new PageResult(page.getTotal(), page.getResult());
+    }
+
+    /**
+     * 删除管理员
+     * @param id
+     */
+    public void delete(Long id) {
+        //判断权限是否足够
+        Admin operator = adminMapper.getByUserId(BaseContext.getCurrentId());
+        if(operator == null){
+            throw new InsufficientPrivilegesException(MessageConstant.INSUFFICIENT_PRIVILEGES_WRONG);
+        }
+        if(!operator.getRole().equals(RoleConstant.SUPER_ADMINISTRATION)){
+            throw new InsufficientPrivilegesException(MessageConstant.INSUFFICIENT_PRIVILEGES_WRONG);
+        }
+
+        adminMapper.deleteById(id);
     }
 }

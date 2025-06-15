@@ -3,10 +3,12 @@ package com.zayy.supermarketmember.controller.admin;
 
 import com.zayy.supermarketmember.common.constant.JwtClaimsConstant;
 import com.zayy.supermarketmember.common.properties.JwtProperties;
+import com.zayy.supermarketmember.common.result.PageResult;
 import com.zayy.supermarketmember.common.result.Result;
 import com.zayy.supermarketmember.common.utils.JwtUtil;
 import com.zayy.supermarketmember.mapper.AdminMapper;
 import com.zayy.supermarketmember.pojo.dto.AdminLoginDTO;
+import com.zayy.supermarketmember.pojo.dto.AdminPageQueryDTO;
 import com.zayy.supermarketmember.pojo.dto.AdminRegisterDTO;
 import com.zayy.supermarketmember.pojo.entity.Admin;
 import com.zayy.supermarketmember.pojo.vo.AdminVO;
@@ -32,8 +34,7 @@ public class    AdminController {
     private AdminService adminService;
     @Autowired
     private JwtProperties jwtProperties;
-    @Autowired
-    private AdminMapper adminMapper;
+
 
     /**
      * 管理员登录
@@ -86,5 +87,31 @@ public class    AdminController {
         adminService.setStatus(id,status);
         return Result.success();
     }
+
+    /**
+     * 删除管理员
+     * @return
+     */
+    @DeleteMapping()
+    @ApiOperation("删除管理员接口")
+    public Result<String> delete(Long id){
+        adminService.delete(id);
+        return Result.success();
+    }
+
+    /**
+     * 管理员分页查询
+     * @param adminPageQueryDTO
+     * @return
+     */
+    @GetMapping("/page")
+    @ApiOperation("管理员分页查询")
+    public Result<PageResult> page(AdminPageQueryDTO adminPageQueryDTO) {
+        log.info("管理员分页查询:{}",adminPageQueryDTO);
+        PageResult pageResult = adminService.page(adminPageQueryDTO);
+        return Result.success(pageResult);
+    }
+
+
 
 }

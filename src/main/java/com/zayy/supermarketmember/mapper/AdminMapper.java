@@ -1,7 +1,10 @@
 package com.zayy.supermarketmember.mapper;
 
 
+import com.github.pagehelper.Page;
+import com.zayy.supermarketmember.pojo.dto.AdminPageQueryDTO;
 import com.zayy.supermarketmember.pojo.entity.Admin;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -33,4 +36,18 @@ public interface AdminMapper {
      * @param admin
      */
     void update(Admin admin);
+
+    /**
+     * 分页查询
+     * @param adminPageQueryDTO
+     * @return
+     */
+    Page<Admin> page(AdminPageQueryDTO adminPageQueryDTO);
+
+    /**
+     * 根据id删除管理员
+     * @param id
+     */
+    @Delete("DELETE FROM supermarket_member.admin WHERE id=#{id}")
+    void deleteById(Long id);
 }

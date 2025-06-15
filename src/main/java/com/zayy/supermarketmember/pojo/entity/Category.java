@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 /**
  * 产品分类表
  */
-public class ProductCategory {
+public class Category {
     private Long id;
     private String name;
     private String description;
