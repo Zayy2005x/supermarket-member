@@ -13,4 +13,7 @@ public class MessageConstant {
     public static final String UPLOAD_FAILED = "上传失败";
     public static final String CATEGORY_EXIST = "商品分类已存在";
     public static final String CATEGORY_BE_RELATED_PRODUCT = "当前分类关联了商品,无法删除";
+    public static final String PRODUCT_EXIST = "商品已存在";
+    public static final String UNKNOW_ERROR = "未知错误";
+    public static final String ALREADY_EXIST = "已存在";
 }

@@ -16,7 +16,9 @@ import com.zayy.supermarketmember.pojo.entity.Admin;
 import com.zayy.supermarketmember.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.DigestUtils;
 
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -41,6 +43,7 @@ public class AdminServiceImpl implements AdminService {
 
         //核对密码是否正确
         //TODO 后续改为使用MD5加密登录
+        password = DigestUtils.md5DigestAsHex(password.getBytes());
         if(!admin.getPassword().equals(password)){
             //密码错误
             throw new PasswordWrongException(MessageConstant.PASSWORD_WRONG);
@@ -85,10 +88,12 @@ public class AdminServiceImpl implements AdminService {
             //两次密码不一致
             throw new RePasswordNotMatchException(MessageConstant.RE_PASSWORD_NOT_MATCH);
         }
+        String password = adminRegisterDTO.getPassword();
+        password = DigestUtils.md5DigestAsHex(password.getBytes());
         //业务逻辑检验无误,写入数据库
         Admin admin = Admin.builder()
                 .username(adminRegisterDTO.getUsername())
-                .password(adminRegisterDTO.getPassword())
+                .password(password)
                 .name(adminRegisterDTO.getName())
                 .role(RoleConstant.ADMINISTRATION)  //权限设置为管理员
                 .status(StatusConstant.DISABLE) //状态默认为禁用
