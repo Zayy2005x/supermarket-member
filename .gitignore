@@ -1,9 +1,13 @@
 HELP.md
 target/
-.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/m
+
+aven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-src/main/resources/application*.yml
+src/main/resources/application.yml
+src/main/resources/application-dev.yml
+logs/
 ### STS ###
 .apt_generated
 .classpath
